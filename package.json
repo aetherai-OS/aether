@@ -1,0 +1,19 @@
+{
+  "name": "aetheros-prototype",
+  "version": "0.2.0",
+  "description": "AetherOS prototype — Electron wrapper for the docs/ desktop with search, terminal, and game launcher",
+  "main": "electron-main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-packager . AetherOS --icon=docs/assets/logo.ico --overwrite"
+  },
+  "devDependencies": {
+    "electron": "^26.0.0",
+    "electron-packager": "^17.1.0"
+  },
+  "dependencies": {
+    "node-pty": "^1.0.0"
+  },
+  "author": "AetherAI",
+  "license": "MIT"
+}

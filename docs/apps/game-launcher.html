@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Game Launcher — AetherOS</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="launcher-page">
+  <div class="launcher-app" style="padding:24px;max-width:900px;margin:40px auto;">
+    <h2>Games</h2>
+    <div style="display:flex;gap:12px;align-items:center;margin-bottom:12px;">
+      <button id="scanBtn" class="btn">Scan for Steam/Epic</button>
+      <button id="addCustom" class="btn ghost">Add Custom Game</button>
+      <input id="gameFilter" placeholder="Search games..." style="flex:1;padding:10px;border-radius:8px;border:none;background:rgba(255,255,255,0.02);color:#fff" />
+    </div>
+    <div id="gamesList" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px"></div>
+
+    <div id="customForm" class="hidden" style="margin-top:18px;padding:12px;background:rgba(255,255,255,0.02);border-radius:8px">
+      <h3>Add Custom Game</h3>
+      <input id="customName" placeholder="Name" style="width:100%;padding:8px;margin-bottom:8px;border-radius:6px;border:none;background:rgba(255,255,255,0.02)" />
+      <input id="customExec" placeholder="Executable path or URL (steam://, epic://)" style="width:100%;padding:8px;margin-bottom:8px;border-radius:6px;border:none;background:rgba(255,255,255,0.02)" />
+      <div style="display:flex;gap:8px"><button id="saveCustom" class="btn primary">Save</button><button id="cancelCustom" class="btn ghost">Cancel</button></div>
+    </div>
+  </div>
+  <script src="../scripts/games.js"></script>
+</body>
+</html>
