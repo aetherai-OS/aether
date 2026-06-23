@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>AetherOS — Desktop</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="desktop">
+  <canvas id="wallpaper"></canvas>
+
+  <div id="bootOverlay" class="boot">
+    <div class="boot-stage">
+      <div id="bootParticles"></div>
+      <div id="bootLogo" class="boot-logo"><img src="assets/logo.svg" alt="Aether"></div>
+    </div>
+  </div>
+
+  <div id="desktopUI" class="ui hidden">
+    <div id="windows"></div>
+
+    <div id="taskbar" class="taskbar">
+      <div class="taskbar-center">
+        <button id="launcherBtn" class="task-btn">◦</button>
+      </div>
+    </div>
+
+    <div id="launcher" class="launcher hidden">
+      <input id="launcherSearch" placeholder="Search apps..." />
+      <div class="app-grid">
+        <div class="app" data-app="terminal">Terminal</div>
+        <div class="app" data-app="browser">Browser</div>
+        <div class="app" data-app="files">Files</div>
+        <div class="app" data-app="settings">Settings</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="scripts/waves.js"></script>
+  <script src="scripts/desktop.js"></script>
+</body>
+</html>
